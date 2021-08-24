@@ -1,0 +1,43 @@
+@charset 'utf-8';
+@font-face {
+    font-family: 'Cairo-Bold';
+    src: url('../font/Cairo-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Cairo-Light';
+    src: url('../font/Cairo-Light.ttf');
+}
+
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo-Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 10;
+}
+
+body {
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+}
+
+svg {
+    margin-bottom: -1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cairo-Bold';
+}
+
+a {
+    color: $flat-peter-river;
+}

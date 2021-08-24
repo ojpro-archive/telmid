@@ -1,0 +1,45 @@
+    @import 'vars';
+    @import 'reset';
+    @import 'animations';
+    @import 'header';
+    @import 'index';
+    @import 'footer';
+    .home-content {
+        .about {
+            width: 98%;
+            margin: 0 auto;
+            background-image: url("../img/undraw_site_content_ihgn.png");
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: contain;
+            p {
+                width: 54%;
+                height: fit-content;
+                margin: 16px 24px;
+                padding: 8px;
+                position: relative;
+                &::after {
+                    content: " ";
+                    background-color: transparent;
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    top: 0;
+                    right: -8px;
+                    border-top: 2px dashed $main-color;
+                    border-right: 2px solid $main-color;
+                }
+                &::before {
+                    content: " ";
+                    background-color: transparent;
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    bottom: 0;
+                    left: -8px;
+                    border-bottom: 2px dashed $main-color;
+                    border-left: 2px solid $main-color;
+                }
+            }
+        }
+    }

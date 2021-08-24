@@ -1,0 +1,156 @@
+header {
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    nav {
+        width: 100%;
+        height: 48px;
+        background-color: $main-color;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        ul {
+            width: 100%;
+            list-style: none;
+            position: relative;
+            li {
+                color: $flat-clouds;
+                text-decoration: none;
+                font-weight: lighter;
+                position: relative;
+                display: inline-block;
+                line-height: 48px;
+                margin: 0 8px;
+                a {
+                    color: $flat-clouds;
+                    text-decoration: none;
+                    font-weight: lighter;
+                    svg {
+                        font-size: 12px;
+                        color: $flat-clouds;
+                        font-weight: lighter;
+                        margin-bottom: -1px;
+                    }
+                }
+                ul {
+                    position: absolute;
+                    left: 0;
+                    background-color: $main-color;
+                    display: none;
+                    width: 90px;
+                    margin-left: -14px;
+                    border-radius: 0 0 2px 2px;
+                    li {
+                        color: $bg;
+                        padding: 0;
+                        margin: 0;
+                        width: 100%;
+                        text-align: center;
+                        svg {
+                            float: right;
+                            margin: 16px 8px 0 0;
+                        }
+                        &:hover {
+                            background-color: $flat-peter-river;
+                        }
+                        &:last-of-type {
+                            border-radius: 0 0 2px 2px;
+                        }
+                    }
+                }
+                &:hover>ul {
+                    display: block;
+                    cursor: pointer;
+                }
+                &:hover .fa-chevron-down {
+                    transition: .4s;
+                    transform: rotate(180deg);
+                }
+            }
+            .logo-name {
+                margin: 0 16px 0 60px;
+                a {
+                    font-weight: 20px;
+                    font-weight: bolder;
+                }
+            }
+            .profile-img {
+                float: left;
+                margin-top: 6px;
+            }
+            .help {
+                float: left;
+            }
+        }
+    }
+    .slider {
+        background-image: url("../img/tech-bg-e1552063085176.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        position: relative;
+        margin-top: 48px;
+        width: 100vw;
+        height: calc(100vh - 48px);
+        .helper1 {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: -48px;
+            right: 0;
+            background-color: $main-color;
+            opacity: .6;
+        }
+        .fa-chevron-double-down {
+            color: $flat-clouds;
+            position: absolute;
+            bottom: 8px;
+            right: 50%;
+            font-size: 40px;
+            cursor: pointer;
+            animation: up-down .6s infinite alternate;
+        }
+        .content {
+            padding: 16px;
+            width: 48vw;
+            position: absolute;
+            top: 16vh;
+            right: 32px;
+            align-items: center;
+            h1 {
+                width: fit-content;
+                color: #fff;
+                padding: 4px;
+                border-radius: 2px;
+            }
+            p {
+                color: #fff;
+                text-align: right;
+            }
+        }
+        .login {
+            border-radius: 4px;
+            padding: 8px 8px 12px;
+            color: #fff;
+            background: transparent;
+            border: 1px solid $flat-clouds;
+            font-size: 16px;
+            position: absolute;
+            bottom: 28px;
+            left: 32px;
+            .fa-sign-in {
+                transform: rotate(180deg);
+                margin-right: 8px;
+                animation: left-right .6s infinite alternate;
+            }
+            &:hover {
+                transition: .4s;
+                color: $main-color;
+                background: #fff;
+                font-weight: bold;
+            }
+        }
+    }
+}

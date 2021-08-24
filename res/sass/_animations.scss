@@ -1,0 +1,26 @@
+@keyframes up-down {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes left-right {
+    from {
+        margin-right: 0;
+    }
+    to {
+        margin-right: 12px;
+    }
+}
+
+@keyframes zoom-in-out {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.2, 1.2);
+    }
+}
